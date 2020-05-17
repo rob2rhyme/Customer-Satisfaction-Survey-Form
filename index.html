@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+              <meta charset="utf-8">
+              <title>Customer Satisfaction Survey Form</title>
+              <link rel="icon" href="favicon.svg" />
+              <link rel="stylesheet" type="text/css" href="styles.css">
+              <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lobster&family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+              <div class="container">
+                    <header class="header">
+                            <h1 id="title" class="text-center">Customer Satisfaction Survey Form</h1>
+                    </header>
+                    <form id="survey-form"> 
+
+
+                    <div class="form-group name-group">
+                            <label id="name-label" for="name">Full Name:</label>
+
+                             <input type="text"
+                                    name="name"
+                                    id="name"
+                                    class="form-control"
+                                    placeholder="Type your name"
+                                    required/></div>
+
+
+                    <div class="form-group email-group">
+                            <label id="email-label" for="email">Email Address:</label>
+
+                              <input type="email"
+                                      name="email"
+                                      id="email"
+                                      class="form-control"
+                                      placeholder="Enter Email"
+                                      required/></div>
+
+
+                    <div class="form-group number-group">
+                            <label id="number-label" for="number">Enter your Phone Number:</label>            
+                              <input type="number" 
+                                    id="number" 
+                                    name="phone" 
+                                    placeholder="+1 (123) 456-6789" 
+                                    pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" 
+                                    class="form-control" 
+                                    min="0"
+                                    max="99999999999" 
+                                    required/></div>
+
+                    <div class="form-group feature-group">
+                            <p id="sub-head-label">Where are you located?</p>
+                            <select id="most-like" name="mostLike" class="form-control" required>
+                                    <option disabled selected value>Select your location</option>
+                                    <option value="north-america">North America</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="asia">Asia</option>
+                                    <option value="oceania">Oceania</option>
+                                    <option value="south-america">South America</option>
+                                    <option value="other">Other</option></select></div>
+
+                    <div class="form-group input-group">
+                            <p id="sub-head-label">Which of the following best describes you as a customer?</p>
+                            <select id="dropdown" name="role" class="form-control" required>
+                                    <option disabled selected value>Select customer type.</option>
+                                    <option value="individual">Individual</option>
+                                    <option value="business">Business</option>
+                                    <option value="government">Government</option>
+                                    <option value="non-profit">Non-Profit Organization</option>
+                                    <option value="educational">Educational</option>
+                                    <option value="other">Other</option></select></div>
+
+                    <div class="form-group recommend-group">
+                            <p id="sub-head-label">Select your age-group:</p>
+                      <label><input name="age-group"
+                                    value="years"
+                                    type="radio"
+                                    class="input-radio"
+                                    checked/>18-25 Years</label>
+
+                      <label><input name="age-group"
+                                    value="years"
+                                    type="radio"
+                                    class="input-radio"/>26- Years</label>
+
+                      <label><input name="age-group"
+                                    value="years"
+                                    type="radio"
+                                    class="input-radio"/>36-45 Years</label>
+
+                      <label><input name="age-group"
+                                    value="years"
+                                    type="radio"
+                                    class="input-radio"/>46-55 Years</label>
+
+                      <label><input name="age-group"
+                                    value="years"
+                                    type="radio"
+                                    class="input-radio"/>56 Years +</label></div>
+
+
+                    <div class="form-group rate-group">
+                            <p id="sub-head-label">Please Rate your overall satisfaction:</p>
+
+                      <label for="very-dissatisfied">
+                             <input type="radio" 
+                                    class="rate-button" 
+                                    name="my-input" 
+                                    value="select"/>Very Dissatisfied</label>
+
+                      <label for="dissatisfied">
+                             <input type="radio" 
+                                    class="rate-button" 
+                                    name="my-input" 
+                                    value="select"/>Dissatisfied</label>
+
+                      <label for="average">
+                             <input type="radio" 
+                                    class="rate-button" 
+                                    name="my-input" 
+                                    value="select"/>Average</label>
+
+                      <label for="satisfied">
+                             <input type="radio" 
+                                    class="rate-button" 
+                                    name="my-input" 
+                                    value="select"/>Satisfied</label>
+
+                      <label for="extremely-satisfied">
+                             <input type="radio" 
+                                    class="rate-button" 
+                                    name="my-input" 
+                                    value="select" 
+                                    checked/>Extremely Satisfied</label></div>
+
+                    <div class="form-group improve-group">
+                            <p id="sub-head-label">Where else can we improve?<span class="clue">(Check all that apply)</span></p>
+
+                      <label><input name="prefer"
+                                    value="1"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Staff Professionalism.</label>
+
+                      <label><input name="prefer"
+                                    value="2"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Product Quality</label>
+
+                      <label><input name="prefer"
+                                    value="3"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Site Tidiness</label>
+
+                      <label><input name="prefer" 
+                                    value="4"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Communication</label>
+
+                      <label><input name="prefer"
+                                    value="5"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Price Accuracy</label>
+
+                      <label><input name="prefer"
+                                    value="6"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Customer Care</label>
+
+                      <label><input name="prefer"
+                                    value="7"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Advertisement</label>
+
+                      <label><input name="prefer"
+                                    value="8"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Price Match Accuracy</label>
+
+                      <label><input name="prefer"
+                                    value="9"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Shipping</label>
+
+                      <label><input name="prefer"
+                                    value="10"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Membership Benefits</label>
+
+                      <label><input name="prefer"
+                                    value="11"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Payment Processing</label>
+
+                      <label><input name="prefer"
+                                    value="12"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Refund</label>
+
+                      <label><input name="prefer"
+                                    value="13"
+                                    type="checkbox"
+                                    class="input-checkbox"/>Order Search filter.</label></div>
+
+
+                    <div class="form-group suggestion-group"><p id="sub-head-label">Any additional feedback, comments or suggestions?</p>
+                          <textarea id="comments"
+                                    class="input-textarea"
+                                    name="comment"
+                                    placeholder="Enter your comment here..."></textarea></div>
+
+
+                    <div class="form-group followup-group"><p id="sub-head-label">May we contact you to follow up on these responses?</p>
+                      <select id="followup-group-select">
+                            <option disabled selected value>Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option></select></div>
+
+
+                    <div class="form-group submit-group">
+                            <button type="submit" id="submit" class="submit-button">Submit</button></div>
+                            <p id="description" class="description text-center">Thank you for your time to complete this survey.</p>     
+                    </form>
+              </div>
+        </body>
+</html>

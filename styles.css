@@ -1,0 +1,198 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lobster&family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">');
+
+:root {--color-white: #f3f3f3;
+      --color-darkblue: #1b1b32;
+      --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+      --color-green: #37af65;}
+
+*, *::before, *::after {box-sizing: border-box;}
+
+
+body {font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--color-white);
+      margin: 0;
+      background: linear-gradient(#331900, #663300, #994c00, #cc6600, #ff8000, #ff9933, #ffb266, #ffcc99, #FFE5CC, #ffffff);
+      background-repeat: no-repeat;}
+      
+
+body::before {content: '';
+              position: fixed;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              z-index: -2;
+              opacity: .2;
+              background-image: url(background.svg);
+              background-size: cover;
+              background-repeat: no-repeat;}
+
+h1 {font-weight: 400;
+    line-height: 1.2;}
+
+h1, #description{font-family: 'Lobster', cursive;}
+
+p {font-size: 1.5rem;}
+
+h1, p {margin-top: 0;
+       margin-bottom: 0.5rem;}
+
+label {display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;}
+
+
+input, button, select, textarea {margin: .4rem;
+                                font-family: 'Handlee', cursive;
+                                font-size: inherit;
+                                line-height: inherit;}
+
+
+button {border: none;}
+
+.rate-group{display: block;}
+
+.container {width: 100%;
+            margin: 3.5rem auto 0 auto;
+            height: 100%;
+            padding: 25px;
+            border-radius: 5% 5% 0 0;
+            border-size: auto;}
+
+@media (min-width: 576px) {.container {max-width: 540px;}}
+
+@media (min-width: 768px) {.container {max-width: 720px;}}
+
+.header {padding: 0 0.625rem;
+         margin-bottom: .1rem;}
+
+.description {font-style: italic;
+              font-weight: 200;
+              text-shadow: 1px 1px 1px #000000;}
+
+.description:hover {text-shadow: 1px 1px 1px #994c00;}
+
+.clue {margin-left: 0.25rem;
+      font-size: 1rem;
+      color: #e4e4e4;}
+
+.text-center {text-align: center;
+              color: #e5e4cc;
+              text-shadow: 1px 1px 2px #000;
+              margin-bottom: 1px;}
+
+
+.name-group, 
+.rate-group, 
+.followup-group,
+.email-group,
+.number-group,
+.input-group,
+.recommend-group,
+.feature-group,
+.improve-group,
+.suggestion-group,
+.submit-group{background: linear-gradient(#333300, #666600, #999900, #cccc00);}
+
+.name-group:hover, 
+.rate-group:hover, 
+.followup-group:hover,
+.email-group:hover,
+.number-group:hover,
+.input-group:hover,
+.recommend-group:hover,
+.feature-group:hover,
+.improve-group:hover,
+.suggestion-group:hover{
+box-shadow: 5px 5px 8px 4px #808080;}
+
+
+#description, #sub-head-label, #name-label, #email-label, #number-label {font-family: 'Saira Condensed', sans-serif;
+                                                                         line-height: 2rem;
+                                                                         font-size: 2rem;}
+
+form {padding: 2.5rem 0.625rem;
+      border-radius: 5%;}
+
+@media (min-width: 480px) {form {padding: 2.5rem;}}
+
+.form-group {margin: 0 auto 1.25rem auto;
+             padding: 1rem;
+             border-radius: 1rem;}
+
+
+.form-control {display: block;
+               width: 98%;
+               height: 2.375rem;
+               padding: 0.4rem 0.875rem;
+               color: #000000;
+               background-color: #fff;
+               background-clip: padding-box;
+               border: 1px solid #ced4da;
+               border-radius: 0.25rem;
+               transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;}
+
+
+.form-control:focus {border-color: #80bdff;
+                     outline: 0;
+                     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);}
+
+
+.rate-button, .input-radio, .input-checkbox {display: inline-block;
+                                             margin-left: 10rem;
+                                             margin-right: 0.625rem;
+                                             min-height: 1.25rem;
+                                             min-width: 1.25rem;}
+
+
+#followup-group-select{background-color: #889e81;
+                       font-family: 'Handlee', cursive;
+                       font-size: 2rem;
+                       color: #ffffff;
+                       width: 10rem;
+                       display: inline-block;
+                       margin-left: 13rem;}
+
+
+#followup-group-select:hover{background-color: #994c00;}
+
+
+@media (max-width: 576px) {.rate-button, 
+                           .input-radio, 
+                           .input-checkbox {margin-left: 1rem !important;}}
+
+
+@media (max-width: 768px) {.rate-button,
+                           .input-radio,
+                           .input-checkbox {margin-left: 3rem !important;}}
+
+
+@media(max-width: 768px){#followup-group-select {margin-left: 8rem !important;}}
+
+@media(max-width: 576px){#followup-group-select {margin-left: 5.5rem !important;}}
+
+
+.input-textarea {min-height: 120px;
+                 width: 98%;
+                 padding: 0.625rem;
+                 resize: vertical;
+                 color: #000000;}
+
+
+
+.submit-button {display: block;
+                width: 98%;
+                padding: 0.75rem;
+                background: #889e81;
+                color: inherit;
+                font-family: 'Lobster', cursive;
+                font-size: 2rem;
+                font-weight: bold;
+                border-radius: 2px;
+                cursor: pointer;}
+
+.submit-button:hover {background: #994c00;
+                      text-shadow: 1px 1px 2px #000;}
